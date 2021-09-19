@@ -148,7 +148,6 @@ include('header.html');
 	if(mysqli_num_rows($result)>0)            //Display Tab
 	{
 		echo "<div class='row'>";
-		
 		echo "<div class='col-sm-1'></div>";
 		echo "<div class='col-sm-4' style='text-align: center;'>
 		<div class='row'>
@@ -202,7 +201,6 @@ include('header.html');
 				<div class='col-sm-8' style='text-align: left;'>
 					<input type='tel' id='s4' name='rcon' class='form-control' placeholder='Recovery contact number'  />
 					<div id='d4' style='color: red;'></div>
-					
 				</div>
 				</div>
 				<div class='form-group'>
