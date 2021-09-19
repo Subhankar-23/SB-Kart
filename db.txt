@@ -1,0 +1,81 @@
+How we can create a database :
+	create database <dbname>;
+	e:g : create database employee;
+
+How we can reterive the list of all the avaiable databases:
+	show databases;
+
+how we can delete the database
+	drop database <dbname>;
+	e.g: drop database employee;
+
+How to use the database :
+	use <dbname>;
+
+How we can create a table in a database :
+ 	create table <tablename>(columnName DataType Constraint,columnName DataType Constraint,.....);
+	Note : constraint is optional 
+
+How we can see the list of all the avaiable table in a databases:
+	show tables;
+
+How we can see the description of a  existing table:
+	desc <tablename>;
+************************************************************************************************************************************
+insert Query : adding new record in a table
+************************************************************************************************************************************
+How we can insert a data in a table :
+	insert into <tablename>(columnName,...) values(value1,value2,....);
+	
+	Note : columnNames are optional if you want to insert all column data in the same sequence as table define
+*************************************************************************************************************************************
+select Query : To reterive data from table
+*************************************************************************************************************************************
+How we can reterive data from a table :
+	1. Reterive all the records from table :
+		select * from <tableName>;
+	2. Reterive selected column data from the table :
+		select columnName1,columnName2,... from <tableName>;
+	3. Reteriving data from a table on the basis of some condition : Then we use where clause
+		select * from <tableName> where <condition>;
+	4. Reteriving data from a table in assending or decending order on the basis of particular column: 
+		(order by clause is used to reterive data from table in assending or desending order)
+		select * from <tableName> order by <columnName> ASC/DESC
+	5. Reteriving data from a table on the basis of specified muliple values.(in keyword is used to reterive data from table on            the basis of multiple value)
+		select * from <tableName> where <columnName> in (value1,value2,value3,...);
+	6. Reteriving data from a table on the basis of specified pattern 
+          (Like keyword is used to reteriving data from a table on the basis of specified pattern)
+		%	repersent zero, one or more character
+		_	repersent single character
+
+		select * from <tableName> where <columnName> like <pattren>
+**************************************************************************************************************************************
+Update Query : is used to modify the existing records of table
+**************************************************************************************************************************************
+	update <tableName> set columnName1=value,columnName2=value,.... where condition
+
+**************************************************************************************************************************************
+delete Query : is used to remove the existing records of table
+**************************************************************************************************************************************
+	1. Delete all record from table
+		delete from <tableName>;
+	2. delete select column then we use delete query with where clause
+		delete from <tableName> where condition;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

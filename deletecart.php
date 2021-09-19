@@ -1,0 +1,11 @@
+<?php
+session_start();
+$id=$_GET['pid'];
+$cart=$_COOKIE['mycart'];
+$arr=($cart);
+//$i=array_search($id,$arr);
+unset($arr);
+//$str=implode($arr);
+//setcookie("cart",$str);
+header("location:Cart.php");
+?>
